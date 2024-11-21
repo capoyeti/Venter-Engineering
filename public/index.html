@@ -138,7 +138,37 @@
             </form>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script src="js/contact.js"></script>
+    <footer class="bg-white mt-8 shadow rounded-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="text-venter-dark">
+                <p class="text-lg">Contact us: 064 792 3909</p>
+            </div>
+        </div>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="js/contact.js"></script>
+<script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyAy7tiiNvQAvLLYVQrS7-HQPfWIKODIc9M",
+          authDomain: "fir-ac145.firebaseapp.com",
+          projectId: "fir-ac145",
+          storageBucket: "fir-ac145.firebasestorage.app",
+          messagingSenderId: "203076135538",
+          appId: "1:203076135538:web:142e29e8d0219ab62170eb",
+          measurementId: "G-EYJH0WPS3M"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+</script>
 </body>
 </html>
